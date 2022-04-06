@@ -13,9 +13,9 @@ collections:
     fields: 
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Nav order", name: "nav_order", widget: "number"}
-      - {label: "Has children", name: "has_children", widget: "boolean" }
-      - {label: "Parent", name: "parent", widget: "string"}
+      - {label: "Nav order", name: "nav_order", widget: "number", required: false}
+      - {label: "Has children", name: "has_children", widget: "boolean", required: false}
+      - {label: "Parent", name: "parent", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
    
