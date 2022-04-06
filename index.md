@@ -2,6 +2,7 @@
 layout: page
 title: Home
 nav_order: 0
+has_children: true
 ---
 # Compost toilets for boats and off-grid living
 
