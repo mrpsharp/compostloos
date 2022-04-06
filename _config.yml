@@ -84,7 +84,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Visit Facebook Group":
+  "Facebook":
     - "https://www.facebook.com/groups/compostingloos/"
 
 # Makes Aux links open in a new tab. Default is false
@@ -126,3 +126,4 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
