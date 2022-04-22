@@ -1,0 +1,16 @@
+{% assign files = "" | split: "," %} 
+{% for file in site.static_files %}
+    {% if file.path contains page.dir  %}
+        {% unless file.path contains "assets" %}
+            {% assign files = files | push: file %}
+        {% endunless %}
+    {% endif %}
+{% endfor %}
+{% if files.size > 0 %}
+    <h3>File list</h3>
+    <ul>
+        {% for file in files %}
+            <li><a href="{{file.path}}">{{ file.basename | replace "_", " "}}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}
